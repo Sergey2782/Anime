@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 1em/1/4em sans-serif;
+	
+}
+div {
+	box-sizing: border-box;
+}
+h3 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.block {
+	width: 300px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding: 20px 0;
+	margin: 20px auto;
+}
+.circle {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: #852790;
+	line-height: 200px;
+	text-align: center;
+	font-size: 1.5em;
+	position: relative;
+	color: white;
+	text-shadow: 3px 3px 3px 0;
+}
+.circle::after {
+	content: "";
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: #c82dda;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 1.5s;
+}
+.circle:hover::after {
+	opacity: 0;
+	transition: 0.75s;
+	box-shadow: 0 0 20px 20px #3d3d3d inset;
+}
+.circle span {
+	z-index: 2;
+	position: relative;
+}
+.text {
+	text-align: justify;
+	font-size: 0.85em;
+}
