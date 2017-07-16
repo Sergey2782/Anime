@@ -1,0 +1,66 @@
+
+
+.wor{
+	background-color: white;
+	width: 500px;
+	
+}
+.world {
+	text-transform: uppercase;
+	font-family: 'Monoton', cursive;
+}
+.world > p {	
+	box-shadow: 15px 15px 20px 10px rgba(27, 83, 153,  .5);
+	text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff;
+	font-size: 50px;
+	text-align: center;
+	height: 180px;
+	width: 300px;
+	background: black;
+	color: white;
+}
+.red {
+	text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+	color: red;
+}
+@keyframes flash {
+	0% { color: red; }
+	0.1% {opacity: 0.15; }
+	0.7% { opacity: 0.75; }
+	1% { opacity: 1; }
+	50% { opacity: 1; }
+	50.02% { opacity: 0.8; }
+	50.95% { opacity: 0.3; }
+	51.5% { opacity: 1; }
+	
+	100% { opacity: 1; }
+}
+.flash {
+	text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+	font-size: 75x;
+	color: red;
+	animation: flash 4s infinite; 
+}
+@keyframes flashtwo {
+	0% { color: white, opacity: 1; }
+	10% { opacity: 1; }
+	10.1% { opacity: 0.15; }
+	11.5% { opacity: 0.75; }
+	11.8% { opacity: 1; }
+	
+	60% { opacity: 1; }
+	60.02% { opacity: 0.08; }
+	60.95% { opacity: 0.3; }
+	
+	61.5% { opacity: 1; }
+	65%  { opacity: 0.1; }
+	75%  { opacity: 0.1; }
+	76%  { opacity: 0.7; }
+	78%  { opacity: 0.85; }
+	78%  { opacity: 0.85; }
+	79%  { opacity: 1; }
+	100% { opacity; 1; }
+}
+#flashtwo {
+	animation: flashtwo 7s infinite;
+}
