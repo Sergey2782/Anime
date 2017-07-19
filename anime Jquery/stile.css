@@ -1,0 +1,38 @@
+
+
+.align {
+	margin: auto;
+}
+.box, .box_one, .box_two, .box_three, .container {
+	width: 50%;
+	border: 1px solid green;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+}
+.box:hover,
+.box_one:hover,
+.box_two:hover,
+.box_three:hover {
+    background: blue;
+    opacity: 0.5;
+    transition: 0.3s;
+    color: white;
+}
+
+.buttons {
+	width: inherit;
+	margin:auto;
+	text-align: center;
+	margin-bottom: 5px; 
+	margin-top: 5px;
+}
+.red_square {
+	width: 200px;
+	min-height: 150px;
+	background: red;
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	position: relative;
+}
