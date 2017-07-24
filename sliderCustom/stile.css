@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 400px;
+	margin: 100px auto 0
+}
+div.view {
+	height: 300px; 
+	width: inherit;
+	overflow: scroll;    /*--- при неработающем JS  - пользователь сможет прокрутить картинки*/
+}
+div.show {
+	display: none;      /*--- при неработающем JS  - пользователь сможет прокрутить картинки*/
+	margin-top: 1em;
+}
+div.show > button {
+   padding: 1em;
+   margin-left: 1em;
+}
+div.view ul {
+	list-style: none;
+	width: 10000px;
+}
+div.view ul li {
+	float: left;
+}
